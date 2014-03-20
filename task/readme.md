@@ -1,1 +1,0 @@
-code for NDE ratings.
