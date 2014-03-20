@@ -1,0 +1,139 @@
+@import "elements.less";
+@import "bootstrap/bootstrap.less";
+@import url(http://fonts.googleapis.com/css?family=Istok+Web:700);
+//@my-font-family: 'Istok Web', sans-serif;
+@my-font-family: "helvetica", sans-serif;
+@font-size-base: 14px;
+@background:#a7abae;
+@light:#c7cbce;
+@med:#85898d;
+@dark:#55595d;
+@darkest:#17273B;
+@accent2:rgb(221, 128, 116);//dark pink
+@accent2dark:rgb(190, 128, 126);
+@accent2emph:rgb(190, 108, 106);
+@accent1:rgb(231, 97, 61);
+
+
+@fontcolor:@darkest;
+@linkdefault:rgb(219,111,99);//red
+@linkhover:rgb(245, 172, 96);//orange
+@buttonhover:rgb(254, 190, 156);//(160, 72, 50);//pink
+
+body{
+    background-color:white;
+    font-size: @font-size-base;
+    font-family:@my-font-family;
+    height:100%;
+    color:@fontcolor;
+}
+p{
+    font-family: @my-font-family;
+}
+h1, h2, h3, h4, h5 {
+    font-family: @my-font-family;
+    text-align: center;
+}
+h3{
+    line-height:.7em;
+}
+input[type="range"] {
+    margin-left:.5em;
+    margin-right:.5em;
+}
+input[type="text"] {
+    margin-bottom:.2em;
+}
+#page_content{
+    position:relative;
+    margin-left:5%;
+    margin-right:5%;
+    padding-left:2em;
+    padding-right:2em;
+    padding-top:1.5em;
+    width:90%;
+    height:100%;
+    background-color:@background;
+    overflow:scroll;
+}
+
+.button{
+    margin-top:.5em;
+    margin-right:.2em;
+    color:green;
+}
+.contbutton{
+    .button;
+    font-weight:600;
+    margin-top:1em;
+}
+.demoq{
+    margin-top:.3em;
+    margin-bottom:.3em;
+}
+.response_item{
+    position:absolute;
+    right:0em;
+}
+.questiondiv{
+    background-color:@light;
+    font-style:italic;
+    padding-left:.3em;
+    padding-right:.3em;
+    padding-top:.3em;
+    border-style:solid;
+    border-color:@light;
+}
+.dimdiv{
+    margin-top:1em;
+    font-weight:600;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: @dark;
+    width: 15em;
+    height:.5em;
+}
+input[type="range"]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    background-color: @darkest;
+    opacity: 0.5;
+    width: .5em;
+    height: 1em;
+}
+input.demoslider{
+    width: 8em;
+    height:.5em;
+}
+input.demoslider::-webkit-slider-thumb {
+     -webkit-appearance: none;
+    background-color: @darkest;
+    opacity: 0.5;
+    width: .5em;
+    height: 1em;
+}
+    
+.emoslider{
+    margin-left:2em;
+}
+#mainslider{
+    text-align:center;
+    background-color:@med;
+    margin-left:8em;
+    margin-right:8em;
+    padding:.5em;
+}
+#fillinblock{
+    position:absolute;
+    top:8em;
+    width:30em;
+}
+#scaleblock{
+    position:absolute;
+    top:19em;
+    width:65em;
+}
+#finalblock{
+    top:32em;
+    position:absolute;
+}

@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Research Study</title>
+    head_var
+<script type="text/javascript">
+function validate(form){
+    if (!checkTextField(form.gender)) {alert('Please enter your gender!');return false;}
+    if (!checkTextField(form.age)) {alert('Please enter your age!');return false;}
+    return true;
+}
+function checkRadioArray(radioButtons){
+    for (var i=0; i< radioButtons.length; i++) {
+        if (radioButtons[i].checked) return true;
+    }
+    return false;
+}
+function checkTextField(textField){
+    if (textField.value!='') return true;
+    return false;
+}
+</script>
+</head>
+<body>
+<div id="page_content">
+<div>
+<h3> Demographics</h3>
+<p>Thank you for completing our study! We have a few quick follow up questions for you.</p>
+</div>
+<form name="myform" action="nextthing_var" method="post" onSubmit="return validate(myform)">
+<div id="fillinblock">
+<p><b>Please tell us about yourself.</b></p>
+<div class="demoq"><label for="city">City (optional): </label> <input class="response_item" type="text" name="city" size=30></div>
+<div class="demoq"><label for="country" >Country (optional): </label><input class="response_item" type="text" name="country" size=30></div>
+<div class="demoq"><label for="gender" >Gender: </label><input class="response_item" type="text" name="gender" size=30></div>
+<div class="demoq"><label for="age">Age: </label><input class="response_item" type="text" name="age" size=30></div>
+</div>
+<div id="scaleblock">
+<p><b>Please rate how well these statements describe you.</b></p>
+<div class="demoq"><span>I find that I am "in tune" with other people's feelings.</span><span class="response_item">not at all<input class="demoslider" type="range" name="response_intune" value="5" min="0" max="10" step="1" id="slider1"/>definitely</span></div>
+<div class="demoq"><span>I can usually tell when someone is happy or sad without looking at their face.</span><span class="response_item">not at all<input class="demoslider" type="range" name="response_noface" value="5" min="0" max="10" step="1" id="slider1"/>definitely</span></div>
+<div class="demoq"><span>I don't give much thought to how other people feel.</span><span class="response_item">not at all<input class="demoslider" type="range" name="response_nothought" value="5" min="0" max="10" step="1" id="slider1"/>definitely</span></div>
+<div class="demoq"><span>I usually can't figure out how someone is feeling unless they tell me.</span><span class="response_item">not at all<input class="demoslider" type="range" name="response_needverbal" value="5" min="0" max="10" step="1" id="slider1"/>definitely</span></div>
+<div class="demoq"><span>I mostly recognize what people are feeling from their facial expressions and their tone of voice.</span><span class="response_item">not at all<input class="demoslider" type="range" name="response_facevoice" value="5" min="0" max="10" step="1" id="slider1"/>definitely</span></div>
+<div class="demoq"><span>People often react to things in ways that surprise me.</span><span class="response_item">not at all<input class="demoslider" type="range" name="response_surprised" value="5" min="0" max="10" step="1" id="slider1"/>definitely</span></div>
+</div>
+<div id="finalblock">
+<p><b>Do you have any comments, thoughts, or feedback about this study? </b></p>
+<div class="demoq"><textarea name="thoughts" cols=80 rows=5> </textarea></div>
+<p>When you click continue you will receive a code that allows you to <b> recieve your payment</b>.</p>
+<input class="contbutton" type="submit" value="Continue" />
+</div>
+<input type="hidden" name="subjid" value="subjid_var">
+<input type="hidden" name="keycode" value="keycode_var"> 
+<input type="hidden" name="rownum" value="formindex_var"> 
+<input type="hidden" name="thisround" value="thisround_var">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Research Study</title>
+    head_var
+    <script>
+    function actionfunction(actionfile) {
+        $('#myform').attr('action',actionfile);
+    }
+    </script>
+</head>
+<body>
+<div id="page_content">
+<h3>Good job!</h3>
+<p>You have answered thisround_var thisroundunit_var of the task (out of possrounds_var total possible rounds). You may stop now (earning $totalpayment_var) or you can continue with another round <b>(earning an additional $rate_var)</b>.</p>
+<p>Please note that payment for the first round will be provided as payment for this hit. Payment for all subsequent rounds will be provided as a <b>bonus following completion.</b></p>
+<form name="myform" id="myform" action="nextthing_var" method="post">
+<input class="button" type="submit" id="continue" value="Continue" onclick="actionfunction('question.py')"/>
+<input class="button" type="submit" id="stop" value="Stop" onclick="actionfunction('demographics.py')"/>
+<input type="hidden" name="subjid" value="subjid_var">
+<input type="hidden" name="item" value="itemlabel_var">
+<input type="hidden" name="correctans" value="emoans_var">
+<input type="hidden" name="keycode" value="keycode_var">       	
+<input type="hidden" name="qindex" value="qindex_var">
+<input type="hidden" name="qnum" value="qnum_var">
+<input type="hidden" name="dnums" value="dnumlist_var"> 
+<input type="hidden" name="rownum" value="formindex_var"> 	
+<input type="hidden" name="dlabel" value="dlabel_var"> 	
+<input type="hidden" name="possqs" value="possqs_var"> 
+<input type="hidden" name="thisround" value="thisround_var">
+</form>
+</div>
+</body>
+</html>
