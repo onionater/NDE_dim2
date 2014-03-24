@@ -97,6 +97,7 @@ def make_checkarray(emolist):
         numcols=math.floor(math.sqrt(len(emolist)))
     numcols=4 #this will be prettier for this one
     buckets=[[] for i in range(0,numcols)]
+    shuffle(emolist)
     for n, emo in enumerate(emolist):
         col=int(n%numcols)
         if n==0:
