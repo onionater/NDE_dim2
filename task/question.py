@@ -60,14 +60,15 @@ else: #if a match, print the good stuff
     totalqpersubj=len(dnums)
     qindex=myform['qindex'].value
     qindex=int(qindex)+1
+    emoans=emoanswers[qnum]
     if qindex==1:
         formindex=ndf.enteruser(cursor,subjid,tablename)
         nextthing='question.py'
     elif qindex<totalqpersubj:
-        formindex=ndf.savelastentry(cursor, tablename, myform, emolist)
+        formindex=ndf.savelastentry(cursor, tablename, myform, emolist, emoans)
         nextthing='question.py'
     elif qindex==totalqpersubj:
-        formindex=ndf.savelastentry(cursor, tablename, myform, emolist)
+        formindex=ndf.savelastentry(cursor, tablename, myform, emolist,emoans)
         nextthing='roundup.py'   
         #print "main loop"
     elif qindex>totalqpersubj:
@@ -85,12 +86,11 @@ else: #if a match, print the good stuff
     dlabel=thisdim[qlabelindex]
     dquest=thisdim[Qindex]
     question=questions[qnum]
-    emoans=emoanswers[qnum]
     qname=names[qnum]
     dquest=dquest.replace('NAMEVAR', qname)
+    dquest=dquest.replace('!!!', "'")
     itemlabel=itemlabels[qnum]
     question=question.replace('NAMEVAR', qname)
-    
     newhtml=ndf.gethtml(printpage)
     emoquest='How did NAMEVAR feel in this situation?'
     emoquest=emoquest.replace('NAMEVAR',qname)

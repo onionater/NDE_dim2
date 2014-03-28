@@ -11,8 +11,8 @@ user="askerry"
 passwd="password"
 db="aesbehave"
 #variables
-baserate=.25
-rate=.15
+baserate=.30
+rate=.30
 
 ####
 

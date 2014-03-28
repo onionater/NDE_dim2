@@ -69,13 +69,16 @@ def savedemodata(cursor, tablename, form):
     savedata(cursor,tablename,'response_facevoice',response_facevoice,formindex)
     savedata(cursor,tablename,'response_surprised',response_surprised,formindex)
 
-def savelastentry(cursor, tablename, myform, emolist):
+def savelastentry(cursor, tablename, myform, emolist, *args):
+    if args:
+        emoans=args[0]
     formindex=myform['rownum'].value
     lastitem=myform['item'].value
     qvardim=myform['dlabel'].value
     lastanswer=myform['correctans'].value
     qvaremo=qvardim+'_qemo'
     qvaritem=qvardim+'_qlabel'
+    actualemo='emotion'
     try:
         lastresponse=myform['response'].value
         savedata(cursor,tablename,qvardim,lastresponse,formindex)
@@ -86,6 +89,10 @@ def savelastentry(cursor, tablename, myform, emolist):
            emoresp=myform[emo].value
            savedata(cursor,tablename,emo+'_extent',emoresp,formindex)
            savedata(cursor,tablename,qvardim,lastanswer,formindex)
+    try:
+        savedata(cursor,tablename,actualemo,emoans,formindex)
+    except:
+        pass
     return formindex
 
 def make_checkarray(emolist):
@@ -117,8 +124,8 @@ def make_checkarray(emolist):
 def make_scaleseries(emolist):
     printblock='<div><p>Rate the extent to which the target is feeling each emotion.</p>'
     for emo in emolist:
-        printblock=printblock+'<div><span><b>%s: </b></span><span class="emoslider">not at all<input type="range" name="%s" value="5" min="0" max="10" step="1" id="%s"/>very strongly</span></div>' % (emo,emo,emo)
-    printblock=printblock+'<div><span><b>Neutral: </b></span><span class="emoslider">not at all<input type="range" name="Neutral" value="5" min="0" max="10" step="1" id="Neutral"/>very strongly</span></div></div>'
+        printblock=printblock+'<div class=emoslidercontainer><span><b>%s: </b></span><span class="emoslider">not at all<input type="range" name="%s" value="5" min="0" max="10" step="1" id="%s"/>very strongly</span></div>' % (emo,emo,emo)
+    printblock=printblock+'<div class=emoslidercontainer><span><b>Neutral: </b></span><span class="emoslider">not at all<input type="range" name="Neutral" value="5" min="0" max="10" step="1" id="Neutral"/>very strongly</span></div></div>'
     return printblock
 def make_scale(mintag,midtag,maxtag, html):
     printblock=gethtml(html)
