@@ -31,3 +31,5 @@ def getquestions(stimfile):
                     
 [questions, itemlabels, emoanswers]=getquestions(stimfile)
 possqs=range(0,len(questions))
+removeqs=[0]###add
+possqs=[q for q in possqs if q not in removeqs]###add

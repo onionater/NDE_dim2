@@ -18,7 +18,8 @@ cursor = MySQLdb.connect(host=cf.host,user=cf.user,passwd=cf.passwd,db=cf.db).cu
 theids=myform.keys() 
 subjid = myform['subjid'].value
 questionID=ndf.defineQ(subjid)
-qnum=int(questionID)
+#qnum=int(questionID)
+qnum=int(myform['qnum'].value)
 qindex=myform['qindex'].value
 possqs = myform['possqs'].value
 try:

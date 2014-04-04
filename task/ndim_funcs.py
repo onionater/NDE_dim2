@@ -135,7 +135,7 @@ def make_scale(mintag,midtag,maxtag, html):
     return printblock
     
 def defineQ(subjid):
-    questionID=subjid[subjid.index('q')+1:subjid.index('q')+3]
+    questionID=subjid[subjid.index('q')+1:subjid.index('q')+4]###add
     return questionID
 
 def string2intlist(string):
