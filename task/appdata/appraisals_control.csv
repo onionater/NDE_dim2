@@ -1,0 +1,9 @@
+Dnum,Dquestion,Dqname,LowEnd,Middle,HighEnd
+1,Was NAMEVAR a character in this story/situation?,main_character,not a character,neutral/not applicable,"yes, she was a character"
+2,How did NAMEVAR feel in this situation?,emotion,NA,NA,NA
+3,Did NAMEVAR find this situation to be positive or negative?,valence,clearly negative,neutral/not applicable,clearly positive
+4,Did NAMEVAR find the situation to be high or low in intensity?,arousal,very low intensity,neutral intensity/not applicable,very high intensity
+5,Was NAMEVAR afraid in this situation?,afraid_dim,not at all afraid,somewhat/not applicable,very afraid
+6,Was NAMEVAR happy in this situation?,happy_dim,not at all happy,somewhat/not applicable,very happy
+7,Was NAMEVAR angry in this situation?,angry_dim,not at all angry,somewhat/not applicable,very angry
+8,Was NAMEVAR sad in this situation?,sad_dim,not at all sad,somewhat/not applicable,very sad

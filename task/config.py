@@ -5,14 +5,14 @@ import csv
 htmldict={'head':'html/head.html','login':'html/login.html', 'question':'html/question.html', 'roundup':'html/roundup.html', 'summary':'html/summary.html', 'demographics':'html/demographics.html', 'keycode':'html/keycode.html', 'errorpage':'html/iderror.html', 'slider':'html/slider.html'}
 datadict={'config':'appdata/config_data.csv', 'stimfile':'appdata/NDE_stims.csv', 'subjectfile':'appdata/slist.csv', 'appraisals':'appdata/appraisals.csv'}
 #mysql info
-table='NDE_dims2'
+table='NDE_dims2_control' #NDE_dims2
 host="localhost"
 user="askerry"
 passwd="password"
 db="aesbehave"
 #variables
-baserate=.30
-rate=.30
+baserate=.1#.30
+rate=.1#.30
 
 ####
 

@@ -1,0 +1,41 @@
+Dnum,Dquestion,Dqname,LowEnd,Middle,HighEnd
+1,Did NAMEVAR expect this situation to occur?,expectedness,very unexpected,neutral/not applicable,very expected
+2,Did the situation involve a hedonically positive or pleasant experience for NAMEVAR?,pleasantness,very unpleasant,neutral/not applicable,very pleasant
+3,"Was the situation consistent or inconsistent with NAMEVAR!!!s goals, needs, or desires?",goal_consistency,very inconsistent with goals/desires,neutral/not applicable,very consistent with goals/desires
+4,Was this situation fair or unfair for NAMEVAR?,fairness,very unfair,neutral/not applicable,very fair
+5,Was this situation caused by a person or some other external force (e.g. randomness)?,agent_cause,external cause (not a person),neutral/not applicable,caused by a person
+6,Did someone cause this situation intentionally or did it occur by accident?,agent_intention,caused accidentally,neutral/not applicable,caused intentionally
+7,Was this situation caused by NAMEVAR herself or by someone/something else?,self_cause,caused by other person/thing,neutral/not applicable,caused by herself
+8,Did this situation involve people that NAMEVAR felt close to?,close_others,"no, involved no close others",neutral/not applicable,"yes, involved close others"
+9,Were the events in this situation primarily within NAMEVAR!!!s control?,control,no control,neutral/not applicable,complete control
+10,Did NAMEVAR think she had the power to alter the situation in the future?,altering,unable to alter,neutral/not applicable,very able to alter
+11,Did this situation involve people behaving in a way that would be considered proper or moral?,moral,very immoral behavior,neutral/not applicable,very moral/proper behavior
+12,Did this situation affect NAMEVAR!!!s self-esteem or opinion of herself?,selfesteem,hurt her self-esteem,neutral/not applicable,boosted her self-esteem
+13,Did this situation occur suddenly/out of the blue?,suddenness,not at all sudden,neutral/not applicable,very sudden
+14,Was this situation a familiar event/situation for NAMEVAR?,familiarity,very unfamiliar,neutral/not applicable,very familiar
+15,Did NAMEVAR!!!s emotion involve an event that would or might occur in the future?,future,no future events,neutral/not applicable,"yes, involved future events"
+16,Did this situation involve events from NAMEVAR!!!s distant past?,past,"no, very recent",neutral/not applicable,"yes, very distant past"
+17,Was NAMEVAR!!!s emotion based on an something that had already occured?,occurred,not yet occurred,neutral/not applicable,event already occurred
+18,Did NAMEVAR feel certain about the situation/outcome?,certainty,very uncertain,neutral/not applicable,very certain
+19,Did NAMEVAR think the situation was likely to occur again?,repetition,very unlikely to occur again,neutral/not applicable,very likely to occur again
+20,Did NAMEVAR think she could cope with/handle the situation?,coping,unable to cope,neutral/not applicable,very able to cope
+21,"Was NAMEVAR!!!s emotion related to the mental states (e.g. beliefs, attitudes) of other people?",mental_states,unrelated to others!!! mental states,neutral/not applicable,very related to others!!! mental states
+22,Did people other than NAMEVAR know about the situation that occurred?,others_knowledge,no one else knew,neutral/not applicable,many people knew
+23,Did the situation involve events relating to the physical body?,bodily_disease,unrelated to the body,neutral/not applicable,very related to the body
+24,Was NAMEVAR interacting with people in this situation?,people,no interaction with people,neutral/not applicable,much interaction with people
+25,Was there a lot at stake for NAMEVAR in this situation? Did the events have high-relevance for NAMEVAR!!!s life?,relevance,very little at stake,neutral/not applicable,very much at stake
+26,Was NAMEVAR free to act or behave however she wanted in this situation?,freedom,not at all free,neutral/not applicable,very free
+27,Was NAMEVAR under a lot of pressure in this situation?,pressure,very little pressure,neutral/not applicable,under much pressure
+28,"Was NAMEVAR!!!s situation an isolated incident, or did it have long-term consequences?",consequences,short-term/isolated event,neutral/not applicable,long-term/extended consequences
+29,Was NAMEVAR in physical danger in this situation?,danger,very dangerous situation,neutral/not applicable,very safe situation
+30,Did the situation describe an outcome directly involving NAMEVAR herself or primarily involving other people?,self_involvement,primarily other people,neutral/not applicable,directly involving self
+31,Was NAMEVAR a character in this story/situation?,main_character,not a character,neutral/not applicable,"yes, she was a character"
+32,Was the situation something that NAMEVAR is likely to remember in the future?,remember,unlikely to remember,neutral/not applicable,very likely to remember
+33,Did the situation involve events consistent with NAMEVAR!!!s personality or self-concept?,self_consistency,very inconsistent with personality,neutral/not applicable,very consistent with personality
+34,Did this situation affect NAMEVAR!!!s relationships with other people?,relationship_influence,no effect on relationship,neutral/not applicable,large effect on relationships
+35,"Was this event primarily a reflection of NAMEVAR (e.g. her personality, her abilities) or a reflection of the surrounding situation?",agent_situation,reflection of her,neutral/not applicable,reflection of the situation
+36,How much of NAMEVAR!!!s attention did this situation occupy?,attention,very little attention,neutral/not applicable,much of her attention
+37,Did this situation involve a change in NAMEVAR!!!s psychological state?,psychological_change,very little change,neutral/not applicable,very dramatic change
+38,Did this situation involve risks for NAMEVAR or others?,safey,no risks,neutral/not applicable,extreme risks
+39,Did this situation involve a change in NAMEVAR!!!s knowledge or belief about something?,knowledge_change,no change in knowledge/beliefs,neutral/not applicable,large change in knowledge/beliefs
+40,How did NAMEVAR feel in this situation?,emotion,NA,NA,NA
